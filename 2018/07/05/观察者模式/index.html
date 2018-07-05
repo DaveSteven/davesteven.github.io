@@ -93,7 +93,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/observer_img1.png">
 <meta property="og:image" content="http://yoursite.com/images/observer_img2.png">
-<meta property="og:updated_time" content="2018-07-05T08:28:56.530Z">
+<meta property="og:updated_time" content="2018-07-05T11:03:40.624Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="观察者模式">
 <meta name="twitter:description" content="前两天一个学弟问了我一个问题，使用面向对象的方式实现下面的功能：emmmm….，说实话，这问题对我来说有点超纲，自己没怎么使用面向对象的方式写过功能。嘛，正好练习一下吧！仔细分析过后，需要两个类实现人数计算和总人数计算的功能：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748">
@@ -371,7 +371,10 @@
 <h5 id="第二种解释"><a href="#第二种解释" class="headerlink" title="第二种解释"></a>第二种解释</h5><p>在观察者模式中，观察者需要主动订阅目标事件；在目标发出内容改变的事件后，直接接受事件并作出响应。</p>
 <p>再来谈谈我的理解，举个例子：<br>比如说我对知乎上某个大牛非常感兴趣，喜欢看他的文章，希望有新的文章发布时能够及时的知道，那我只需要关注（订阅）他一下就好了，当有新文章发布的时候，我就能收到通知了。</p>
 <p><img src="/images/observer_img2.png" style="display: inline-block !important"></p>
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>观察者模式是一种紧密耦合的设计模式，用起来简单直接，但是扩展性较差。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ul>
+<li>观察者模式中，被观察者是最主要的，可以接受多个订阅者，是一对多的关系。</li>
+<li>观察者模式是一种紧密耦合的设计模式，用起来简单直接，但是扩展性较差。</li>
+</ul>
 
       
     </div>
