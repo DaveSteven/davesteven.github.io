@@ -83,19 +83,30 @@
 
 
 
-<meta name="description" content="自己在正则表达式方面一直很薄弱，平时工作中感觉也很少用到，其实是自己没有掌握，想不到用而已。当用到的时候，在百度copy一下，并没有去深入研究过。为了提升自己，为了以后更好的机会，巩固JS基础是刻不容缓的，所以先从正则表达式开始学习。花了大概一天的时间，结合慕课网的视频，把正则的知识点整理了一下。 首先介绍一款很实用的图形工具：regexper-static。该工具能够直观的展示一个正则表达式是如">
+<meta name="description" content="自己在正则表达式方面一直很薄弱，平时工作中感觉也很少用到，其实是自己没有掌握想不到用而已。当用到的时候，在百度copy一下，并没有去深入研究过。为了提升自己，为了以后更好的机会，巩固JS基础是刻不容缓的，所以先从正则表达式开始学习。花了大概一天的时间，结合慕课网的视频，把正则的知识点整理了一下。 首先介绍一款很实用的图形工具：regexper-static。该工具能够直观的展示一个正则表达式是如何">
 <meta name="keywords" content="Javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RegExp学习笔记">
 <meta property="og:url" content="http://yoursite.com/2018/08/14/RegExp学习笔记/index.html">
 <meta property="og:site_name" content="Dave&#39;s Blog">
-<meta property="og:description" content="自己在正则表达式方面一直很薄弱，平时工作中感觉也很少用到，其实是自己没有掌握，想不到用而已。当用到的时候，在百度copy一下，并没有去深入研究过。为了提升自己，为了以后更好的机会，巩固JS基础是刻不容缓的，所以先从正则表达式开始学习。花了大概一天的时间，结合慕课网的视频，把正则的知识点整理了一下。 首先介绍一款很实用的图形工具：regexper-static。该工具能够直观的展示一个正则表达式是如">
+<meta property="og:description" content="自己在正则表达式方面一直很薄弱，平时工作中感觉也很少用到，其实是自己没有掌握想不到用而已。当用到的时候，在百度copy一下，并没有去深入研究过。为了提升自己，为了以后更好的机会，巩固JS基础是刻不容缓的，所以先从正则表达式开始学习。花了大概一天的时间，结合慕课网的视频，把正则的知识点整理了一下。 首先介绍一款很实用的图形工具：regexper-static。该工具能够直观的展示一个正则表达式是如何">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/regexp_email.png">
-<meta property="og:updated_time" content="2018-08-20T08:18:49.836Z">
+<meta property="og:image" content="http://yoursite.com/images/regexp_abc.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_a-z.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_ab0-9rn.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_ab0-9rn2.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_word-boundary.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_group.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_group2.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_or.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_group3.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_group4.png">
+<meta property="og:image" content="http://yoursite.com/images/regexp_lookahead.png">
+<meta property="og:updated_time" content="2018-08-21T08:04:52.173Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RegExp学习笔记">
-<meta name="twitter:description" content="自己在正则表达式方面一直很薄弱，平时工作中感觉也很少用到，其实是自己没有掌握，想不到用而已。当用到的时候，在百度copy一下，并没有去深入研究过。为了提升自己，为了以后更好的机会，巩固JS基础是刻不容缓的，所以先从正则表达式开始学习。花了大概一天的时间，结合慕课网的视频，把正则的知识点整理了一下。 首先介绍一款很实用的图形工具：regexper-static。该工具能够直观的展示一个正则表达式是如">
+<meta name="twitter:description" content="自己在正则表达式方面一直很薄弱，平时工作中感觉也很少用到，其实是自己没有掌握想不到用而已。当用到的时候，在百度copy一下，并没有去深入研究过。为了提升自己，为了以后更好的机会，巩固JS基础是刻不容缓的，所以先从正则表达式开始学习。花了大概一天的时间，结合慕课网的视频，把正则的知识点整理了一下。 首先介绍一款很实用的图形工具：regexper-static。该工具能够直观的展示一个正则表达式是如何">
 <meta name="twitter:image" content="http://yoursite.com/images/regexp_email.png">
 
 
@@ -358,7 +369,7 @@
       
 
       
-        <p>自己在正则表达式方面一直很薄弱，平时工作中感觉也很少用到，其实是自己没有掌握，想不到用而已。当用到的时候，在百度copy一下，并没有去深入研究过。为了提升自己，为了以后更好的机会，巩固JS基础是刻不容缓的，所以先从正则表达式开始学习。花了大概一天的时间，结合慕课网的视频，把正则的知识点整理了一下。</p>
+        <p>自己在正则表达式方面一直很薄弱，平时工作中感觉也很少用到，其实是自己没有掌握想不到用而已。当用到的时候，在百度copy一下，并没有去深入研究过。为了提升自己，为了以后更好的机会，巩固JS基础是刻不容缓的，所以先从正则表达式开始学习。花了大概一天的时间，结合慕课网的视频，把正则的知识点整理了一下。</p>
 <p>首先介绍一款很实用的图形工具：<a href="https://github.com/javallone/regexper-static" target="_blank" rel="noopener">regexper-static</a>。该工具能够直观的展示一个正则表达式是如何进行匹配的，来看一下匹配邮箱的正则转成图形如何表示：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/^[0-9a-zA-Z._]+@[0-9a-zA-Z-]+(\.[a-z]+)+$/</span>;</span><br></pre></td></tr></table></figure></p>
 <p><img src="/images/regexp_email.png" style="display: inline-block !important"><br>是不是很神奇？分析起来也很容易，这款工具极大的提高了我学习正则的效率。接下来进入正题：</p>
 <h2 id="1、RegExp-对象"><a href="#1、RegExp-对象" class="headerlink" title="1、RegExp 对象"></a>1、RegExp 对象</h2><p>RegExp 是 JavaScript 内置对象。<br>有两种方法可以实例化 RegExp 对象：</p>
@@ -366,11 +377,231 @@
 <h4 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h4><p>可以传两个参数，第一个为表达式，第二个为修饰符，修饰符接下来会讲。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'is'</span>);  <span class="comment">// 匹配is</span></span><br></pre></td></tr></table></figure></p>
 <p>我们可以用创建的正则表达式做一些事情，比如说把 <code>is</code> 替换为 <code>IS</code> ：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/is/g</span>;</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">'This is a apple'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(re, <span class="string">'IS'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; ThIS IS a apple</span></span><br></pre></td></tr></table></figure></p>
 <p>我们可以看到 <code>str</code> 中所有的 <code>is</code> 都替换成了 <code>IS</code> ，那么如果我只想匹配 <code>is</code> 这个单词，并不想匹配包含 <code>is</code> 的单词，该如何做？可以加入 <code>\b</code> 单词边界进行匹配：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/\bis\b/g</span>;</span><br><span class="line"><span class="keyword">let</span> str = <span class="string">'This is a apple'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(re, <span class="string">'IS'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; This IS a apple</span></span><br></pre></td></tr></table></figure></p>
-<p><code>\b</code> 是用来匹配一个字边界，即字与空格间的位置。</p>
+<p><code>\b</code> 是用来匹配一个字边界，即字与空格间的位置。<br><a id="more"></a></p>
 <h3 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h3><p>在 JavaScript 中，常用的修饰符有：</p>
 <h4 id="i，不区分（ignore）大小写"><a href="#i，不区分（ignore）大小写" class="headerlink" title="i，不区分（ignore）大小写"></a>i，不区分（ignore）大小写</h4><p>例：匹配 <code>de</code> ， 替换为 <code>X</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/de/ig</span>;</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">'abcDe'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(re, <span class="string">'X'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; abcX</span></span><br></pre></td></tr></table></figure></p>
 <h4 id="g，全局（global）匹配"><a href="#g，全局（global）匹配" class="headerlink" title="g，全局（global）匹配"></a>g，全局（global）匹配</h4><p>例：匹配所有的 <code>_</code> ，替换为 <code>仙女</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/_/g</span>;</span><br><span class="line"><span class="keyword">const</span> str = <span class="string">'从前有座_山，_山上住着小_'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(re, <span class="string">'仙女'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; 从前有座仙女山，仙女山上住着小仙女</span></span><br></pre></td></tr></table></figure></p>
 <h4 id="m，多（more）行匹配"><a href="#m，多（more）行匹配" class="headerlink" title="m，多（more）行匹配"></a>m，多（more）行匹配</h4><p>若存在换行 <code>\n</code> 并且有开始 <code>^</code> 或结束 <code>$</code> 符的情况下，和 <code>g</code> 一起使用实现全局匹配，因为存在换行时默认会把换行符作为一个字符进行匹配。<code>g</code> 只匹配第一行，加上 <code>m</code> 后实现多行，每个换行符之后就是开始。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'abcdefg\nabcdefg'</span>;</span><br><span class="line"><span class="keyword">const</span> re = <span class="regexp">/abc/gm</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(re, <span class="string">'ABC'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// ABCdefg\nABCdefg</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="2、元字符"><a href="#2、元字符" class="headerlink" title="2、元字符"></a>2、元字符</h2><p>元字符包括：</p>
+<ul>
+<li>原义文本字符</li>
+<li>元字符</li>
+</ul>
+<p>元字符使正则表达式具有处理能力。<br>在正则表达式中有特殊含义的非字母字符：<br><code>* + ? $ ^ . | \ () {}</code></p>
+<p>还有以下几种：</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\t</td>
+<td>水平制表符</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>垂直制表符</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行符</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车符</td>
+</tr>
+<tr>
+<td>\0</td>
+<td>空字符</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>换页符</td>
+</tr>
+<tr>
+<td>\cX</td>
+<td>与X对应的控制字符(Ctrl + X)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4、字符类"><a href="#4、字符类" class="headerlink" title="4、字符类"></a>4、字符类</h2><p>元字符 <code>[]</code> ，使用 <code>[]</code> 来构建一个简单的类，所谓类是指符合某些特性的对象，一个泛指。<br>例：<code>[abc]</code> ，匹配字符a或b或c的内容<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'a1b2c3d4'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/[abc]/g</span>, <span class="string">'X'</span>);  <span class="comment">// =&gt; X1X2X3d4</span></span><br></pre></td></tr></table></figure></p>
+<p>表达式 <code>[abc]</code> 把a或b或c自定义归为一类，然后匹配这类的字符。<br>转成图形表示：<br><img src="/images/regexp_abc.png" style="display: inline-block !important"></p>
+<h2 id="5、范围类"><a href="#5、范围类" class="headerlink" title="5、范围类"></a>5、范围类</h2><p>例：匹配所有字符，[a-z]<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'a1b2c3d4'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/[a-z]/g</span>, <span class="string">'*'</span>);  <span class="comment">// =&gt; *1*2*3*4</span></span><br></pre></td></tr></table></figure></p>
+<p>转成图形表示：<br><img src="/images/regexp_a-z.png" style="display: inline-block !important"></p>
+<h2 id="6、预定义类"><a href="#6、预定义类" class="headerlink" title="6、预定义类"></a>6、预定义类</h2><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>等价类</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>[^\r\n]</td>
+<td>除了回车和换行符之外的所有字符</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>[0-9]</td>
+<td>数字字符</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>[^0-9]</td>
+<td>非数字字符</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>[\t\n\x0B\f\r]</td>
+<td>空白符</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>[^\t\n\x0B\f\r]</td>
+<td>非空白符</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>[a-zA-Z_0-9]</td>
+<td>单词字符（字母、数字、下划线）</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>[^a-zA-Z_0-9]</td>
+<td>非单词字符</td>
+</tr>
+</tbody>
+</table>
+<p>例：匹配一个ab + 数字 + 任意字符的字符串<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/ab[0-9][^\r\n]/</span>;</span><br></pre></td></tr></table></figure></p>
+<p>如果不使用预定义类，写起来比较麻烦。<br>转成图形表示：<br><img src="/images/regexp_ab0-9rn.png" style="display: inline-block !important"><br>再看一下使用预定义类之后：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/ab\d./</span>;</span><br></pre></td></tr></table></figure></p>
+<p>转成图形表示：<br><img src="/images/regexp_ab0-9rn2.png" style="display: inline-block !important"></p>
+<h4 id="边界匹配字符"><a href="#边界匹配字符" class="headerlink" title="边界匹配字符"></a>边界匹配字符</h4><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^</td>
+<td>以xxx开始</td>
+</tr>
+<tr>
+<td>$</td>
+<td>以xxx结束</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>单词边界</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>非单词边界</td>
+</tr>
+</tbody>
+</table>
+<p>先看一下 <code>\b</code> 单词边界，上代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'This is a girl'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/is/g</span>, <span class="string">'0'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; Th0 0 a girl</span></span><br></pre></td></tr></table></figure></p>
+<p>我们看到 <code>This</code> 中的 <code>is</code> 也被替换成了 <code>0</code> ，这不是我们希望的结果，加上 <code>\b</code> 看一下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'This is a girl'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/\bis\b/g</span>, <span class="string">'0'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; This 0 a girl</span></span><br></pre></td></tr></table></figure></p>
+<p>加上单词边界，可以精确匹配 <code>is</code> 这个单词。<br>转成图形表示：<br><img src="/images/regexp_word-boundary.png" style="display: inline-block !important"><br>如果只想匹配 <code>This</code> 中的 <code>is</code> 该怎么做？看一下此 <code>is</code> 左侧是没有空格的，右侧有空格，可以这样写：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'This is a girl'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/\Bis\b/g</span>, <span class="string">'0'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; Th0 is a girl</span></span><br></pre></td></tr></table></figure></p>
+<p><code>is</code> 左侧的匹配改为 <code>\B</code> 非单词边界即可。</p>
+<h4 id="和"><a href="#和" class="headerlink" title="^ 和 $"></a><code>^</code> 和 <code>$</code></h4><p>例：匹配@ + 任意字符<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'@Product@Develop'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/@./g</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; 哈roduct哈evelop</span></span><br></pre></td></tr></table></figure></p>
+<p>符合条件的 <code>@P</code> 、<code>@D</code> 都被替换成了 <code>哈</code> 。如果只想匹配开头的字符，需要在前面加上 <code>^</code> ：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'@Product@Develop'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/^@./g</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; 哈roduct@develop</span></span><br></pre></td></tr></table></figure></p>
+<p>那么如果只想匹配结束的字符，则需要加上 <code>$</code> ：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'@Product@Develop'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/@.$/g</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; @Product@Develop</span></span><br></pre></td></tr></table></figure></p>
+<p>可以看到字符是原样输出的，因为结尾处并没有匹配到合适的字符。那改一下匹配的规则：任意字符 + @<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'@Product@Develop@'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/.@$/g</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; @Product@Develo哈</span></span><br></pre></td></tr></table></figure></p>
+<p><code>p@</code> 被替换为了 <code>哈</code> 。</p>
+<h2 id="6、量词"><a href="#6、量词" class="headerlink" title="6、量词"></a>6、量词</h2><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>?</td>
+<td>出现<code>0</code>次或<code>1</code>次（最多出现<code>1</code>次）</td>
+</tr>
+<tr>
+<td>+</td>
+<td>出现<code>1</code>次或<code>多</code>次（至少出现<code>1</code>次）</td>
+</tr>
+<tr>
+<td>*</td>
+<td>出现<code>0</code>次或<code>多</code>次（任意次）</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>出现<code>n</code>次</td>
+</tr>
+<tr>
+<td>{n, m}</td>
+<td>出现<code>n</code>到<code>m</code>次</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>至少出现<code>n</code>次</td>
+</tr>
+</tbody>
+</table>
+<p>量词在正则表达式中频繁用到，需要记住。使用方法会在下面记录。</p>
+<h2 id="7、贪婪模式和非贪婪模式"><a href="#7、贪婪模式和非贪婪模式" class="headerlink" title="7、贪婪模式和非贪婪模式"></a>7、贪婪模式和非贪婪模式</h2><p>例子：匹配一个字符3-6次，并替换成字符 <code>哈</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'12345678'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/\d&#123;3,6&#125;/</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// 哈78</span></span><br></pre></td></tr></table></figure></p>
+<p><code>123456</code> 被替换为了 <code>哈</code> ，说明匹配了6次。为什么不匹配3次就停止呢？这就是贪婪模式，在匹配成功的前提下，尽可能多的匹配。<br>再看一下非贪婪模式：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'12345678'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/\d&#123;3,6&#125;?/</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// 哈45678</span></span><br></pre></td></tr></table></figure></p>
+<p>只需要在量词后加上 <code>?</code> ，就变成了非贪婪模式。可以看到 <code>123</code> 被替换为了 <code>哈</code> ，当满足了3个字符的匹配之后，不会再进行匹配。</p>
+<h2 id="8、分组"><a href="#8、分组" class="headerlink" title="8、分组"></a>8、分组</h2><p>例：匹配Byron单词3次<br>我想了想，很简单啊，加上量词就好了：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/Byron&#123;3&#125;/</span>;</span><br></pre></td></tr></table></figure></p>
+<p>但是我转成图形之后一看，好像不太对。<br>转成图形表示：<br><img src="/images/regexp_group.png" style="display: inline-block !important"><br>只有字符 <code>n</code> 循环匹配了3次，并不是整个单词进行匹配。这时候就需要用到分组 <code>()</code> 了。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/(Byron)&#123;3&#125;/</span>;</span><br></pre></td></tr></table></figure></p>
+<p>只需要给 <code>Byron</code> 加上 <code>()</code> 就可以匹配整个单词了。<br>转成图形表示：<br><img src="/images/regexp_group2.png" style="display: inline-block !important"><br>再来看个例子：<br>匹配字母+数字连续出现3次的场景，替换为 <code>哈</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'a1b2c3d4'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/([a-z]\d)&#123;3&#125;/g</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret); <span class="comment">// =&gt; 哈d4</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="或-使用方法"><a href="#或-使用方法" class="headerlink" title="或 | 使用方法"></a>或 <code>|</code> 使用方法</h4><p>使用 <code>|</code> 可以做多个分支的匹配，比如：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'ByronCasper'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/Byron|Casper/g</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; 哈哈</span></span><br></pre></td></tr></table></figure></p>
+<p>转成图形表示：<br><img src="/images/regexp_or.png" style="display: inline-block !important"></p>
+<h4 id="反向引用"><a href="#反向引用" class="headerlink" title="反向引用"></a>反向引用</h4><p>例：将2018-08-13转换成08/13/2018。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> date = <span class="string">'2018-08-13'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = date.replace(<span class="regexp">/(\d&#123;4&#125;)-(\d&#123;2&#125;)-(\d&#123;2&#125;)/</span>, <span class="string">'$2/$3/$1'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; 08/13/2018</span></span><br></pre></td></tr></table></figure></p>
+<p>可以看到匹配的每一项都用 <code>()</code> 进行了分组，3个分组匹配到的内容分别是 <code>$1：2018</code> <code>$2：08</code> <code>$3：13</code> ，匹配到之后便可使用 <code>$1 $2 $3</code> 对内容进行处理。<br>转成图形看会更清楚：<br><img src="/images/regexp_group3.png" style="display: inline-block !important"><br>图例中的group #1…group #3就是$1…$3，用来代表其中的内容。</p>
+<h4 id="忽略分组"><a href="#忽略分组" class="headerlink" title="忽略分组"></a>忽略分组</h4><p>圆括号会有一个副作用，使相关的匹配会被缓存，此时可用 <code>?:</code> 放在第一个选项前来消除这种副作用。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> re = <span class="regexp">/(?:\d&#123;4&#125;)-(\d&#123;2&#125;)-(\d&#123;2&#125;)/</span>;</span><br></pre></td></tr></table></figure></p>
+<p>转成图形表示：<br><img src="/images/regexp_group4.png" style="display: inline-block !important"></p>
+<h2 id="9、前瞻"><a href="#9、前瞻" class="headerlink" title="9、前瞻"></a>9、前瞻</h2><ul>
+<li>正则表达式从文本头部向尾部开始解析，文本尾部方向称为“前”，头部方向称为“后”；</li>
+<li>前瞻就是在正则表达式匹配到规则的时候，向前检查是否符合断言；</li>
+<li>JavaScript不支持后顾；</li>
+<li>符合特定断言的称为 肯定/正向 匹配，不符合的称为 否定/负向 匹配；</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>正则</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>正向前瞻</td>
+<td>exp(?=assert)</td>
+<td></td>
+</tr>
+<tr>
+<td>负向前瞻</td>
+<td>exp(?!=assert)</td>
+<td></td>
+</tr>
+<tr>
+<td>正向后顾</td>
+<td>exp(?&lt;=assert)</td>
+<td>JavaScript不支持</td>
+</tr>
+<tr>
+<td>负向后顾</td>
+<td>exp(?&lt;!assert)</td>
+<td>JavaScript不支持</td>
+</tr>
+</tbody>
+</table>
+<p>例：正向前瞻，匹配后面是数字的字符，替换为 <code>哈</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'a1*2b3'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/\w(?=\d)/g</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; 哈1*2哈3</span></span><br></pre></td></tr></table></figure></p>
+<p>实际上就是把数字前面的字符替换为了目标字符。<br>转换成图形表示：<br><img src="/images/regexp_lookahead.png" style="display: inline-block !important"><br>再来看负向前瞻：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> str = <span class="string">'a1*2b3'</span>;</span><br><span class="line"><span class="keyword">let</span> ret = str.replace(<span class="regexp">/\w(?!\d)/g</span>, <span class="string">'哈'</span>);</span><br><span class="line"><span class="built_in">console</span>.log(ret);  <span class="comment">// =&gt; a哈*哈b哈</span></span><br></pre></td></tr></table></figure></p>
+<p>该项正则表达式是将不符合条件的字符转换成目标字符。<code>1 2 3</code> 都为数字，不符合条件。</p>
 
       
     </div>
@@ -555,7 +786,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、RegExp-对象"><span class="nav-number">1.</span> <span class="nav-text">1、RegExp 对象</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字面量"><span class="nav-number">1.0.1.</span> <span class="nav-text">字面量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#构造函数"><span class="nav-number">1.0.2.</span> <span class="nav-text">构造函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修饰符"><span class="nav-number">1.1.</span> <span class="nav-text">修饰符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#i，不区分（ignore）大小写"><span class="nav-number">1.1.1.</span> <span class="nav-text">i，不区分（ignore）大小写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#g，全局（global）匹配"><span class="nav-number">1.1.2.</span> <span class="nav-text">g，全局（global）匹配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#m，多（more）行匹配"><span class="nav-number">1.1.3.</span> <span class="nav-text">m，多（more）行匹配</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、RegExp-对象"><span class="nav-number">1.</span> <span class="nav-text">1、RegExp 对象</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字面量"><span class="nav-number">1.0.1.</span> <span class="nav-text">字面量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#构造函数"><span class="nav-number">1.0.2.</span> <span class="nav-text">构造函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修饰符"><span class="nav-number">1.1.</span> <span class="nav-text">修饰符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#i，不区分（ignore）大小写"><span class="nav-number">1.1.1.</span> <span class="nav-text">i，不区分（ignore）大小写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#g，全局（global）匹配"><span class="nav-number">1.1.2.</span> <span class="nav-text">g，全局（global）匹配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#m，多（more）行匹配"><span class="nav-number">1.1.3.</span> <span class="nav-text">m，多（more）行匹配</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、元字符"><span class="nav-number">2.</span> <span class="nav-text">2、元字符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、字符类"><span class="nav-number">3.</span> <span class="nav-text">4、字符类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、范围类"><span class="nav-number">4.</span> <span class="nav-text">5、范围类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、预定义类"><span class="nav-number">5.</span> <span class="nav-text">6、预定义类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#边界匹配字符"><span class="nav-number">5.0.1.</span> <span class="nav-text">边界匹配字符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#和"><span class="nav-number">5.0.2.</span> <span class="nav-text">^ 和 $</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、量词"><span class="nav-number">6.</span> <span class="nav-text">6、量词</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、贪婪模式和非贪婪模式"><span class="nav-number">7.</span> <span class="nav-text">7、贪婪模式和非贪婪模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、分组"><span class="nav-number">8.</span> <span class="nav-text">8、分组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#或-使用方法"><span class="nav-number">8.0.1.</span> <span class="nav-text">或 | 使用方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#反向引用"><span class="nav-number">8.0.2.</span> <span class="nav-text">反向引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#忽略分组"><span class="nav-number">8.0.3.</span> <span class="nav-text">忽略分组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9、前瞻"><span class="nav-number">9.</span> <span class="nav-text">9、前瞻</span></a></li></ol></div>
             
 
           </div>
